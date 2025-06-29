@@ -29,21 +29,19 @@ Access the deployed app here:
 
 ## 📦 Project Structure
 
+```
 .
-├── docker-compose.yaml # Defines the container service
-├── Dockerfile # Builds and serves the React app with Nginx
+├── docker-compose.yaml         # Defines the container service
+├── Dockerfile                  # Builds and serves the React app with Nginx
 ├── nginx/
-│ └── default.conf # Nginx config for reverse proxy
-├── react-management-app/ # React app source (Vite + Tailwind)
-│ ├── src/
-│ ├── public/
-│ ├── index.html
-│ └── vite.config.js
-└── README.md # This file
-
-yaml
-Copy
-Edit
+│   └── default.conf            # Nginx config for reverse proxy
+├── react-management-app/       # React app source (Vite + Tailwind)
+│   ├── src/
+│   ├── public/
+│   ├── index.html
+│   └── vite.config.js
+└── README.md                   # This file
+```
 
 ---
 
@@ -55,42 +53,57 @@ Clone the repository and build with Docker Compose:
 git clone https://github.com/Ibrahim2122/Computer-System-Virtualisation.git
 cd Computer-System-Virtualisation
 docker-compose up --build
-Then open your browser to:
-📍 http://localhost:3000
+```
 
-Make sure to change the port mapping in docker-compose.yaml if needed.
+Then open your browser to:  
+📍 `http://localhost:3000`
 
-🔒 Deployment Details
-Nginx is used as a reverse proxy on the host, forwarding traffic to the Docker container.
+> Make sure to change the port mapping in `docker-compose.yaml` if needed.
 
-Certbot was used to issue a free HTTPS certificate.
+---
 
-The site is accessible via both http:// and https:// with automatic redirection to HTTPS.
+## 🔒 Deployment Details
 
-🧠 Real-Life Application
+- Nginx is used as a reverse proxy on the host, forwarding traffic to the Docker container.
+- Certbot was used to issue a free HTTPS certificate.
+- The site is accessible via both `http://` and `https://` with automatic redirection to HTTPS.
+
+---
+
+## 🧠 Real-Life Application
+
 This setup simulates a real-world deployment pipeline used by small SaaS teams or solo developers to host frontend apps securely in the cloud. It reflects best practices for container-based web app delivery.
 
-📸 Screenshot
-(Optional)
+---
+
+## 📸 Screenshot
+
+_(Optional)_  
 Include a screenshot of the app or VS Code here:
 
+![App Screenshot](screenshots/homepage.png)
 
+---
 
-✅ Final Project Requirements Checklist
-Requirement	Completed
-Docker Compose setup	✅ Yes
-Custom Dockerfile	✅ Yes
-Use of Nginx for reverse proxy	✅ Yes
-Containerized build using Vite	✅ Yes
-Port management + volume binding (if any)	✅ Yes
-SSL secured with Let’s Encrypt	✅ Yes
-Custom domain mapped to cloud VM	✅ Yes
-README documentation	✅ Yes
-Live deployment link	✅ Yes
+## ✅ Final Project Requirements Checklist
 
-👨‍💻 Author
-Name: Ibrahim
-Course: Computer System Virtualisation
-Final Project Submission
-Deadline: June 30th, 2025
-```
+| Requirement                               | Completed |
+| ----------------------------------------- | --------- |
+| Docker Compose setup                      | ✅ Yes    |
+| Custom Dockerfile                         | ✅ Yes    |
+| Use of Nginx for reverse proxy            | ✅ Yes    |
+| Containerized build using Vite            | ✅ Yes    |
+| Port management + volume binding (if any) | ✅ Yes    |
+| SSL secured with Let’s Encrypt            | ✅ Yes    |
+| Custom domain mapped to cloud VM          | ✅ Yes    |
+| README documentation                      | ✅ Yes    |
+| Live deployment link                      | ✅ Yes    |
+
+---
+
+## 👨‍💻 Author
+
+**Name:** Ibrahim  
+**Course:** Computer System Virtualisation  
+**Final Project Submission**  
+**Deadline:** June 30th, 2025
