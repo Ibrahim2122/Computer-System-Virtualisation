@@ -78,10 +78,7 @@ This setup simulates a real-world deployment pipeline used by small SaaS teams o
 
 ## 📸 Screenshot
 
-_(Optional)_  
-Include a screenshot of the app or VS Code here:
-
-![App Screenshot](screenshots/homepage.png)
+![alt text](image.png)
 
 ---
 
